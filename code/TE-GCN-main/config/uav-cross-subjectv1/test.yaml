@@ -1,0 +1,24 @@
+# feeder
+feeder: feeders.feeder.Feeder
+test_feeder_args:
+  data_path: ./data/test_joint.npy
+  label_path: ./data/test_label.npy
+  debug: False
+
+# model
+model: model.tegcn.Model
+model_args:
+  num_class: 155
+  num_point: 17
+  num_person: 2
+  graph: graph.uav.Graph
+  graph_args:
+    labeling_mode: 'spatial'
+
+# test
+phase: test
+device: [0,1,2,3]
+test_batch_size: 256
+weights: ./runs/2102-42-12814.pt
+
+save_score: True
