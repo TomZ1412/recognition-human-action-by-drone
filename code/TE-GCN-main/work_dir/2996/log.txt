@@ -1,0 +1,2 @@
+[ Mon Nov 11 22:07:30 2024 ] Load weights from /home/srt16/code/TE-GCN-main/runs/2102-42-12814.pt.
+[ Mon Nov 11 22:07:31 2024 ] using warm up, epoch: 0
